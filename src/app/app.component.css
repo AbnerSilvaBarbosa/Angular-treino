@@ -1,0 +1,10 @@
+.inputDiv{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background-color: darkgray;
+}
+
+.container-card{
+  display: flex;
+  justify-content: center;
+}

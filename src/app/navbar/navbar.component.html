@@ -1,0 +1,26 @@
+<nav [ngClass]="styleNav">
+  <div>
+    <h2>Logo</h2>
+    <button (click)="trocar()">Change theme</button>
+  </div>
+  <div class="options-nav">
+    <div>
+      <p>Producs</p>
+      <p>About us</p>
+      <p>Blog</p>
+    </div>
+  </div>
+
+  <div class="avatar-nav">
+    <div [ngSwitch]="rulerUser">
+      <p *ngSwitchCase="'user'">Account User</p>
+      <p *ngSwitchCase="'shop'">Account Shop</p>
+      <p *ngSwitchCase="'admin'">Account Admin</p>
+    </div>
+    <img
+      class="image-avatar"
+      src="../../assets/3d-render-avatar-character_23-2150611704.avif"
+      alt=""
+    />
+  </div>
+</nav>

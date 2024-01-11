@@ -1,0 +1,52 @@
+.container-card{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap:10px
+}
+
+.card{
+  background-color: white;
+  padding: 3%;
+  border-radius: 1.8%;
+  font-family: 'Montserrat', sans-serif;
+  margin: 5px;
+}
+
+.card-image{
+  text-align: center;
+}
+.card-image > img{
+  width: 100%;
+}
+
+.card-header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.card-header > p{
+  color: #252B42;
+}
+
+.card-header > button{
+  text-align: center;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-size: medium;
+  padding: 10px;
+  color: white;
+  background-color: black;
+  border: none;
+  width: 60%;
+  border-radius: 20px;
+}
+
+button  p {
+  text-align: center;
+  margin: 0;
+}
+
+.card-content{
+  font-weight: bold;
+}

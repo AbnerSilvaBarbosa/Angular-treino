@@ -1,0 +1,14 @@
+<div class="container-card">
+  <div *ngFor="let c of cards; let i = index" class="card">
+    <div class="card-image">
+      <img src="../../assets/image container.png" alt="" />
+    </div>
+    <div class="card-header">
+      <p>{{ c.productName }}</p>
+      <button (click)="removeItem(i)"><p>Remove item</p></button>
+    </div>
+    <div class="card-content">
+      <p><strong>R$:</strong> {{ c.value }}</p>
+    </div>
+  </div>
+</div>
