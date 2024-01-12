@@ -4,16 +4,18 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
-import { TitleComponent } from './title/title.component';
-import { CheckSampleComponent } from './check-sample/check-sample.component';
-import { InputComponent } from './input/input.component';
-import { CardComponent } from './card/card.component';
-import { NavbarComponent } from './navbar/navbar.component';
+import { ComponentsModule } from "./components/components.module";
 
 @NgModule({
-  declarations: [AppComponent, TitleComponent, CheckSampleComponent, InputComponent, CardComponent, NavbarComponent],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, ReactiveFormsModule],
-  providers: [FormsModule],
+  declarations: [AppComponent],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
+    ComponentsModule,
+  ],
+  providers: [],
   bootstrap: [AppComponent],
 })
 export class AppModule {}
